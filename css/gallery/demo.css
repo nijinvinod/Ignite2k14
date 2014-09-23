@@ -1,0 +1,136 @@
+
+
+
+.codrops-header p {
+	opacity: 0.5;
+	text-align: left;
+	font-size: 200%;
+}
+
+.columns p {
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+}
+
+svg.polaroid {
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
+}
+
+.description svg.polaroid {
+	padding: 5px 0 30px;
+}
+
+svg.polaroid rect {
+	stroke: #beb4b7;
+	fill: #fff;
+	stroke-width: 6;
+}
+
+.codrops-header svg.polaroid {
+	position: absolute;
+	top: 50%;
+	z-index: 0;
+	opacity: 0.1;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.codrops-header svg.polaroid rect {
+	fill: #444;
+	stroke-width: 2;
+}
+
+.related {
+	text-align: center;
+	font-size: 1.35em;
+	padding: 6em 2em;
+	overflow: hidden;
+	background-color: #444;
+}
+
+.related > a {
+	border: 3px solid #3c3c3c;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+	color: #3c3c3c;
+	-webkit-transition: color 0.3s, border-color 0.3s;
+	transition: color 0.3s, border-color 0.3s;
+}
+
+.related a:hover {
+	color: #beb4b7;
+	border-color: #beb4b7;
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+@media screen and (min-width: 60em) {
+	.columns {
+		-moz-column-count: 2;
+		-moz-column-gap: 1em;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 1em;
+		column-count: 2;
+		column-gap: 1em;
+	}
+
+	.codrops-header .columns {
+		padding: 3em 0 0;
+		-moz-column-gap: 2em;
+		-webkit-column-gap: 2em;
+		column-gap: 2em;
+	}
+}
+
+
+@media screen and (max-width: 45em) {
+	.codrops-header, 
+	.description {
+		font-size: 80%;
+	}
+
+	.description {
+		padding: 4em 1.5em;
+	}
+
+	.codrops-header svg.polaroid {
+		height: 200px;
+	}
+}
+
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+	.codrops-icon:before {
+		font-size: 160%;
+		line-height: 2;
+	}
+
+}

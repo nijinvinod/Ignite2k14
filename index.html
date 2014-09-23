@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ignite 2014</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/font-style.css">
+		<link rel="stylesheet" type="text/css" href="css/gallery/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery/component.css" />
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/gallery/modernizr.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<header id="mob_id_home" class="mobileHeader">
+				<div class="menu"><i class="icon-menu"></i></div>Ignite 2014
+			</header>
+			<header id="id_home">
+				<div class="headerContainer">
+					<div class="rightSpace">
+						<div class="circle circle1 active"><i class="icon-desktop"></i><div class="status top">BUSINESS</div></div>
+						<div class="circle circle2"><i class="icon-lightbulb"></i><div class="status bottom">IDEAS</div></div>
+						<div class="circle circle3"><i class="icon-presentation"></i><div class="status top">SESSIONS</div></div>
+						<div class="circle circle4"><i class="icon-linegraph"></i><div class="status bottom">GROWTH</div></div>
+					</div>
+					<div class="leftSpace">
+						<h1>Ignite 2014</h1>
+						<h3>October 6-7, 2014</h3>
+						<h4>HYATT REGENCY Chennai, India</h4>
+						<div class="countdown">
+							<div class="timerSec"><div id="t_days">0</div>days</div>
+							<div class="timerSec"><div id="t_hrs">00</div>hours</div>
+							<div class="timerSec"><div id="t_mins">00</div>minutes</div>
+							<div class="timerSec"><div id="t_sec">00</div>seconds</div>
+						</div>
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</header><!-- /header -->
+
+			<!-- START: IGNITE NAVIGATION -->
+			<nav class="deskNav topNavigation">
+				<div class="leftNav">
+					<div class="igniteTiltLogo"></div>
+				</div>
+				<div class="rightNav">
+					<ul>
+						<li class="navItem" name="home">HOME</li>
+					<!--	<li class="navItem" name="sessions">SESSIONS</li> -->
+						<li class="navItem" name="guests">GUESTS</li>
+						<li class="navItem" name="schedule">SCHEDULE</li>
+						<li class="navItem" name="gallery">GALLERY</li>
+						<li class="navItem" name="contact">CONTACT</li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</nav>
+			<!-- END: IGNITE NAVIGATION -->
+
+			<nav class="mobileNav">
+				<ul>
+					<li class="navMobItem" name="home"><i class="icon-home"></i> HOME</li>
+					<!--<li class="navMobItem" name="sessions"><i class="icon-microphone"></i> SESSIONS</li>-->
+					<li class="navMobItem" name="guests"><i class="icon-user2"></i> GUESTS</li>
+					<li class="navMobItem" name="schedule"><i class="icon-alarm"></i> SCHEDULE</li>
+					<li class="navMobItem" name="gallery"><i class="icon-camera"></i> GALLERY</li>
+					<li class="navMobItem" name="contact"><i class="icon-phone"></i> CONTACT</li>
+				</ul>
+			</nav>
+
+			<!-- START:IGNITE  ABOUT US -->
+			<section id="id_about">
+				<div class="content">
+					<div class="about_container">
+						<div class="left">
+							<div class="ignite_logo"></div>
+							<div class="avnet_logo"></div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="right">
+							<p><span class="boldText">Avnet Services</span> is a global organization comprised of IT, lifecycle, business and education experts that collaborates with customers, partners, integrators and suppliers to maximize the potential of IT and data systems. We address complex business needs with advanced technology solutions to accelerate growth. Avnet Services is a single-source provider of enterprise software, hardware and services -- from procurement through integration, operations, management and disposal</p>
+							<p><span class="boldText">Ignite 2014 </span> aims to share and showcase best practices by DEV and QA in Mobile, Web, Infrastructure projects, solution accelerators, global delivery success stories, and ideas via technical sessions. These sessions are in the form of short, impactful presentations and demonstrations (30 minutes or less). Ignite 2014 also provides a platform to meet the AVNET Services leadership team.</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="nextLink" id="id_guests"></div>
+				</div>
+			</section>
+			<!-- END: IGNITE ABOUT US -->
+
+			<!-- START: IGNITE FEATURED SESSIONS 
+			<section>
+				<div class="content centerContent">
+					<div class="heading">Sessions</div>
+					<div class="category">
+						<ul>
+							<li class="catItem active" name="psm">Portal-Social-Mobile</li>
+							<li class="catItem" name="com">Commerce</li>
+							<li class="catItem" name="qa">Quality Assurance</li>
+							<li class="catItem" name="ms">Managed Services</li>
+							<li class="catItem" name="gen">General</li>
+						</ul>
+					</div>
+					<div class="categorySlider">
+						<div class="slide" id="slide_psm">
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/mark.jpg"/>
+								</div>
+								<div class="box_topic">Dalusia - Let's support Worklight</div>
+								<div class="box_speakers">Nijin Vinodan, Kalyanaraman</div>
+							</div>
+							<div class="box" name="java">
+								<div class="box_img">
+									<img src="images/speakers/sundar.jpg"/>
+								</div>
+								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
+								<div class="box_speakers">Abhishek Jain</div>
+							</div>
+							<div class="box" name="commerce">
+								<div class="box_img">
+									<img src="images/speakers/bill.jpg"/>
+								</div>
+								<div class="box_topic">Unexplored Java</div>
+								<div class="box_speakers">Krishna Rao, Navyateja Narravula, Uthkarsh Agni</div>
+							</div>
+						</div>
+
+						<div class="slide" id="slide_com">
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/steve.jpg"/>
+								</div>
+								<div class="box_topic">Selfie Slider</div>
+								<div class="box_speakers">Mohit Khakharia</div>
+							</div>
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/jobs.jpg"/>
+								</div>
+								<div class="box_topic">Costco Mobile - Challenges, Solutions & a Success Story !!!</div>
+								<div class="box_speakers">Aman Sharma</div>
+							</div>
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/mark.jpg"/>
+								</div>
+								<div class="box_topic">Custom Widgets for Enhancing C3 Community Experience</div>
+								<div class="box_speakers">Ganesh Babu</div>
+							</div>
+						</div>
+						<div class="slide" id="slide_qa">
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/steve.jpg"/>
+								</div>
+								<div class="box_topic">Avnet QA - Mobile Automation Strategy (MAS)</div>
+								<div class="box_speakers">Vignesh Karunakaran</div>
+							</div>
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/sundar.jpg"/>
+								</div>
+								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
+								<div class="box_speakers">Abhishek Jain</div>
+							</div>
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/bill.jpg"/>
+								</div>
+								<div class="box_topic">Unexplored Java</div>
+								<div class="box_speakers">Krishna Rao, Navyateja Narravula, Uthkarsh Agni</div>
+							</div>
+						</div>
+						<div class="slide" id="slide_ms">
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/steve.jpg"/>
+								</div>
+								<div class="box_topic">Selfie Slider</div>
+								<div class="box_speakers">Mohit Khakharia</div>
+							</div>
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/steve.jpg"/>
+								</div>
+								<div class="box_topic">Avnet QA - Mobile Automation Strategy (MAS)</div>
+								<div class="box_speakers">Vignesh Karunakaran</div>
+							</div>
+							<div class="box" name="dalusia">
+								<div class="box_img">
+									<img src="images/speakers/sundar.jpg"/>
+								</div>
+								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
+								<div class="box_speakers">Abhishek Jain</div>
+							</div>
+						</div>
+						<div class="slide" id="slide_gen">
+							<div class="box">
+								<div class="box_img">
+									<img src="images/speakers/steve.jpg"/>
+								</div>
+								<div class="box_topic">Avnet QA - Mobile Automation Strategy (MAS)</div>
+								<div class="box_speakers">Vignesh Karunakaran</div>
+							</div>
+							<div class="box">
+								<div class="box_img">
+									<img src="images/speakers/sundar.jpg"/>
+								</div>
+								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
+								<div class="box_speakers">Abhishek Jain</div>
+							</div>
+							<div class="box">
+								<div class="box_img">
+									<img src="images/speakers/mark.jpg"/>
+								</div>
+								<div class="box_topic">Dalusia - Let's support Worklight</div>
+								<div class="box_speakers">Nijin Vinodan, Kalyanaraman</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clearfix"></div>
+					<div class="nextLink" id="id_guests"></div>
+				</div>
+			</section>
+			 END: IGNITE FEATURED SESSIONS -->
+
+			<!-- START: IGNITE GUESTS -->
+			<section>
+				<div class="content">
+					<div class="heading">Guests</div>
+					<div class="guests_container">
+						<div class="guests_content">
+
+							<ul class="ch-grid">
+								<li>
+									<div class="ch-item ch-img-4">
+										<div class="ch-info">
+											<h3>Joe Pearse</h3>
+											<!--<p>Senior Director<a>Avnet Services</a></p>-->
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ch-item ch-img-1">
+										<div class="ch-info">
+											<h3>Stephen Morris</h3>
+											<!--<p>VP<a>Avnet Services</a></p>-->
+										</div>
+									</div>
+								</li>
+								<!--<li>
+									<div class="ch-item ch-img-2">
+										<div class="ch-info">
+											<h3>Paul Hatcher</h3>
+											<p>Managing Partner<a>Avnet Services</a></p>
+										</div>
+									</div>
+								</li>-->
+								<li>
+									<div class="ch-item ch-img-3">
+										<div class="ch-info">
+											<h3>Evan Borysko</h3>
+											<!--<p>Director<a>Regional Delivery</a></p>-->
+										</div>
+									</div>
+								</li>
+								
+								
+							</ul>
+
+							
+						</div>
+					</div>
+					<div class="nextLink" id="id_schedule"></div>
+				</div>
+			</section>
+			<!-- END: IGNITE GUESTS -->
+
+			<!-- START: IGNITE EVENT SCHEDULE -->
+			<section>
+				<div class="content">
+					<div class="heading">Schedule</div>
+					<div class="centerContent">
+						<h1><i class="icon-busy" style="font-size:80px;color:#A80000;margin-bottom:10px;display:block;"></i></h1>
+						<h2>October 6 & October 7</h2><br/>
+						
+						Stay Tuned !<br/>
+					</div>
+					<div class="nextLink" id="id_gallery"></div>
+				</div>
+			</section>
+			<!-- END: EVENT SCHEDULE -->
+
+
+			<!-- START: IGNITE GALLERY -->
+			<section id="id_gallery">
+				<div class="content">
+					<div class="heading">Gallery</div>
+					<div class="gal_container">
+					<section id="photostack-1" class="photostack photostack-start">
+						<div>
+							<figure>
+								<a class="photostack-img"><img src="img/gallery/1.jpg" alt="img01"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Serenity Beach</h2>
+								</figcaption>
+							</figure>
+							<figure>
+								<a class="photostack-img"><img src="img/gallery/14.jpg" alt="img02"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Happy Days</h2>
+								</figcaption>
+							</figure>
+							<figure>
+								<a class="photostack-img"><img src="img/gallery/15.jpg" alt="img03"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Beautywood</h2>
+								</figcaption>
+							</figure>
+							<figure>
+								<a class="photostack-img"><img src="img/gallery/16.jpg" alt="img04"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Heaven of time</h2>
+								</figcaption>
+							</figure>
+							<figure>
+								<a class="photostack-img"><img src="img/gallery/2.jpg" alt="img05"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Speed Racer</h2>
+								</figcaption>
+							</figure>
+							<figure>
+								<a class="photostack-img"><img src="img/gallery/6.jpg" alt="img06"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Forever this</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/7.jpg" alt="img07"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Lovely Green</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/8.jpg" alt="img08"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Wonderful</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/9.jpg" alt="img09"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Love Addict</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/10.jpg" alt="img10"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Friendship</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/11.jpg" alt="img11"/></a>
+								<figcaption>
+									<h2 class="photostack-title">White Nights</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/12.jpg" alt="img12"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Serendipity</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/13.jpg" alt="img13"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Pure Soul</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/5.jpg" alt="img14"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Winds of Peace</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/3.jpg" alt="img15"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Shades of blue</h2>
+								</figcaption>
+							</figure>
+							<figure data-dummy>
+								<a href="#" class="photostack-img"><img src="img/gallery/4.jpg" alt="img16"/></a>
+								<figcaption>
+									<h2 class="photostack-title">Lightness</h2>
+								</figcaption>
+							</figure>
+
+						</div>
+					</section>
+				</div>
+				<script src="js/gallery/classie.js"></script>
+				<script src="js/gallery/photostack.js"></script>
+				<script>
+					// [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+					
+					new Photostack( document.getElementById( 'photostack-1' ), {
+						callback : function( item ) {
+							//console.log(item)
+						}
+					} );
+					
+				</script>
+				<div class="nextLink" id="id_contact"></div>
+				</div>
+			</section>
+			<!-- END: IGNITE GALLERY -->
+
+			<!-- START: CONTACT -->
+			<section id="id_contact">
+				<div class="content">
+					<div class="heading">Contact</div>
+					<footer>
+						<div class="fot_content">
+							<div class="cell">
+								<div class="sLeft">
+									<h4>Talk to Us</h4>
+									<div class="person">
+										<span>Ignite Team</span>
+										<span>ignite@avnet.com</span>
+										<span>+91-9940683288</span>
+									</div>
+								</div>
+								<div class="sRight hideDesk">
+									<h4>Venue</h4>
+									<div class="person">
+										<span><a href="https://www.google.co.in/maps/place/Hyatt+Regency+Chennai/@13.043045,80.248685,17z/data=!3m1!4b1!4m2!3m1!1s0x3a5266466c3b5a81:0xfe35b8153aea85fd" target="_blank"><i class="icon-location"></i> Hyatt Regency</a></span>
+										<span>Chennai</span>
+									</div>
+								</div>
+								<div class="clearFixMob"></div>
+							</div>
+							<div class="cell hideMob">
+								<h4>Organization</h4>
+								<div class="person">
+									<img src="images/avnet_logo.png" width="120" height="35"/>
+									<span>Avnet Services</span>
+									<span>Ramanujam IT Park</span>
+									<span>Chennai</span>
+								</div>
+							</div>
+							
+							
+							<div class="cell social">
+								<div class="sLeft">
+									<h4>Follow Us</h4>
+									<div class="person">
+										<a href=""><img src="images/social/fb.png"/></a>
+										<a href=""><img src="images/social/tw.png"/></a>
+										<a href=""><img src="images/social/yt.png"/></a>
+									</div>
+								</div>
+								<div class="sRight">
+									<h4>App Store</h4>
+									<div class="person">
+										<a href=""><i class="androidIcon icon-android"></i></a>
+										<a href=""><i class="appleIcon icon-apple"></i></a>
+									</div>
+								</div>
+								<div class="clearFixMob"></div>
+							</div>
+							<div class="cell hideMob">
+								<h4>Venue</h4>
+								<a href="https://www.google.co.in/maps/place/Hyatt+Regency+Chennai/@13.043045,80.248685,17z/data=!3m1!4b1!4m2!3m1!1s0x3a5266466c3b5a81:0xfe35b8153aea85fd" target="_blank"><div class="map"><img src="images/maps/hyatt.jpg"/></div></a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</footer>
+				</div>
+			</section>
+			<!-- END: CONTACT -->
+			<div class="container-overlay"></div>
+		</div>
+
+		<!-- END OF CONTAINER -->
+
+
+		<!-- Start of POP Ups -->
+		<div class="sessionDescBox" id="pop_dalusia">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Dalusia</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 10:00 AM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/kalyan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Kalyan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/nijin.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Nijin</div></div>
+				
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_java">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Java</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 10:00 AM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/arthi.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Arthi</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/srini.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Srini</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/manju.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Manju</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_commerce">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Commerce</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 10:00 AM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/kalyan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Kalyan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/nijin.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Nijin</div></div>
+				
+			</div>
+		</div>
+
+		<!-- End of Pop Ups -->
+	</body>
+</html>
