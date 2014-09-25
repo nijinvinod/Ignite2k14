@@ -379,7 +379,7 @@ footer{
 		text-align: center;
 	}
 	.fot_content{
-		width:100%%;
+		width:100%;
 		padding:10px;
 		@include media(max-width $mobile){
 			display: inline-block;
@@ -542,6 +542,14 @@ section{
 		}
 		&.blockSlider{
 			display: block;
+			width: 80%;
+			margin: 0 auto;
+			@include media(min-width 767px max-width 1000px, 6){
+				width: 100%;
+			}
+			@include media(max-width $mobile){
+				width:100%;
+			}
 		}
 	}
 	.guests_container{
@@ -793,6 +801,7 @@ section{
 			width: 25%;
 			padding-right: 100px;
 			position: absolute;
+
 		}
 
 		.cbp_tmtimeline > li .cbp_tmtime span {
@@ -809,6 +818,10 @@ section{
 		.cbp_tmtimeline > li .cbp_tmtime span:last-child {
 			font-size: 24px;
 			color: #000;
+			line-height:2.3;
+			@include media(min-width 767px max-width 1000px, 6){
+				
+			}
 		}
 
 		.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
@@ -878,7 +891,10 @@ section{
 			top: 10px;
 			margin: 0 0 0 -25px;
 		}
-
+		.cbp_tmicon i.icon-presentation {
+			font-size: 18px;
+			font-weight: bold;
+		}
 		.cbp_tmicon-phone:before {
 			content: "\e000";
 		}
@@ -929,6 +945,12 @@ section{
 					display: none;
 				}
 			}
+		}
+
+		.mer {
+			display: inline;
+			color: #aaa;
+			font-size: 16px;
 		}
 
 		/* Example Media Queries */
@@ -1068,6 +1090,9 @@ section{
 		}
 	}
 }
+
+
+
 
 
 

@@ -21,13 +21,24 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}.icon-desktop:before {
+}
+
+.icon-coffee:before {
+	content: "\e61c";
+}
+.icon-volume:before {
+	content: "\e61d";
+}
+.icon-megaphone:before {
+	content: "\f077";
+}
+.icon-music:before {
+	content: "\e61e";
+}
+.icon-desktop:before {
 	content: "\e002";
 }
-.icon-linegraph:before {
-	content: "\e039";
-}
-.icon-book-open:before {
+.icon-book:before {
 	content: "\e00b";
 }
 .icon-presentation:before {
@@ -36,26 +47,20 @@
 .icon-lightbulb:before {
 	content: "\e030";
 }
-.icon-display:before {
-	content: "\e619";
+.icon-linegraph:before {
+	content: "\e039";
 }
-.icon-phone2:before {
-	content: "\e616";
+.icon-arrow-up:before {
+	content: "\e600";
 }
-.icon-study:before {
-	content: "\e61a";
-}
-.icon-times-circle:before {
-	content: "\f058";
-}
-.icon-microphone:before {
-	content: "\f130";
-}
-.icon-home:before {
-	content: "\e603";
+.icon-arrow-down:before {
+	content: "\e601";
 }
 .icon-office:before {
 	content: "\e602";
+}
+.icon-home:before {
+	content: "\e603";
 }
 .icon-camera:before {
 	content: "\e604";
@@ -105,14 +110,14 @@
 .icon-menu:before {
 	content: "\e613";
 }
+.icon-cross:before {
+	content: "\e614";
+}
 .icon-earth:before {
 	content: "\e615";
 }
-.icon-arrow-up:before {
-	content: "\e600";
-}
-.icon-arrow-down:before {
-	content: "\e601";
+.icon-phone2:before {
+	content: "\e616";
 }
 .icon-apple:before {
 	content: "\e617";
@@ -120,9 +125,18 @@
 .icon-android:before {
 	content: "\e618";
 }
+.icon-display:before {
+	content: "\e619";
+}
+.icon-study:before {
+	content: "\e61a";
+}
 .icon-microphone2:before {
 	content: "\e61b";
 }
-.icon-cross:before {
-	content: "\e614";
+.icon-times-circle:before {
+	content: "\f058";
+}
+.icon-microphone:before {
+	content: "\f130";
 }
