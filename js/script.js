@@ -4,6 +4,14 @@ $( document ).ready(function() {
 	var changeSchFrom = "day1";
 	var prev_aid = "home";
 	var menu_status = "closed";
+
+
+	var schStartHeight = 2389;
+    var schEndHeight = 3893;
+
+    var secStartHeight = 679;
+    var secEndHeight = 1670;
+
 	/**
 		Navigation Scroll
 	**/
@@ -16,21 +24,42 @@ $( document ).ready(function() {
    	 	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
     });
 
+
+    
     /**
     Method to add Navigation Menu -- Fixed
-    
+    **/
     $(window).scroll(function() {
 	    var height = $(window).scrollTop();
+	    console.log(height);
+	    
 
-	    if(height  > header_height) {
-	    	$(".topNavigation, .leftNav").addClass("scrolled");
+	    if(height  > schStartHeight && height < schEndHeight ) {
+	    	$("#dateBoxRight").addClass("scrolled");
 	    }else{
-	    	$(".topNavigation, .leftNav").removeClass("scrolled");
+	    	$("#dateBoxRight").removeClass("scrolled");
 	    }
-	});**/
+
+	    if(height  > secStartHeight && height < secEndHeight ) {
+	    	$("#sesBoxRight").addClass("scrolled");
+	    }else{
+	    	$("#sesBoxRight").removeClass("scrolled");
+	    }
+
+	});
 
 	/** SESSION --  Category list toggle**/
 	$(".catItem").click(function(){
+		var aTag = $("#id_sessions");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+
+		if($(this).hasClass(".smallCatItem")){
+			sesEndHeight = 1350;
+		}
+		else{
+			sesEndHeight = 1670;
+		}
+
 		var changeTo = $(this).attr("name");
 		$("li[name='"+changeTo+"']").addClass("active");
 		$("li[name='"+changeFrom+"']").removeClass("active");
@@ -44,6 +73,15 @@ $( document ).ready(function() {
 
 	/** SCHEDULE --  Category list toggle**/
 	$(".catSchItem").click(function(){
+		var aTag = $("#id_schedule");
+		$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+
+		if($(this).hasClass(".smallCatSchItem")){
+			schEndHeight = 2390;
+		}
+		else{
+			schEndHeight = 3893;
+		}
 		var changeSchTo = $(this).attr("name");
 		$("li[name='"+changeSchTo+"']").addClass("active");
 		$("li[name='"+changeSchFrom+"']").removeClass("active");
@@ -58,7 +96,9 @@ $( document ).ready(function() {
 
 	$(".box").click(function(){
 		var boxId = $(this).attr("name");
+		console.log(boxId);
 		var containerheight = $(".container").height();
+		$("body").css("overflow-y","hidden");
 		$(".container-overlay").height(containerheight);
 		$(".container-overlay").addClass("disabled"); 
 		$("#pop_"+boxId).fadeIn( 300, function() {
@@ -67,22 +107,38 @@ $( document ).ready(function() {
 	});
 
 	$(".container-overlay, .closeIcon").click(function(){
+		$("body").css("overflow-y","auto");
 		$(".container-overlay").removeClass("disabled"); 
 		$(".sessionDescBox").fadeOut(300, function() {});
 	});
 
 
 	/*-- Mobile Navigation --*/
+	$(function(){
+		$( "body" ).on( "swiperight", swipeRightHandler );
+		$( "body" ).on( "swipeleft", swipeLeftHandler );
+		
+		function swipeRightHandler( event ){
+			$(".mobileNav").animate({left:'0px'},100);
+			menu_status="opened";
+		}
+
+		function swipeLeftHandler( event ){
+			$(".mobileNav").animate({left:'-230px'},100);
+			menu_status="closed";
+		}
+	});
+
 	$(".menu").click(function(){
 		toggleMenu();
 	});
 
 	function toggleMenu(){
 		if(menu_status=="closed"){
-			$(".mobileNav").animate({left:'0px'});
+			$(".mobileNav").animate({left:'0px'},100);
 			menu_status="opened";
 		}else{
-			$(".mobileNav").animate({left:'-230px'});
+			$(".mobileNav").animate({left:'-230px'},100);
 			menu_status="closed";
 		}
 	}
@@ -91,12 +147,13 @@ $( document ).ready(function() {
 	$(".showDesc").click(function(){
 		$(this).next().slideToggle();
 		var icon = $(this).find("i");
-		if($(icon).hasClass("icon-arrow-up")){
-			$(icon).removeClass("icon-arrow-up");
+		if($(icon).hasClass("icon-chevron-up")){
+			$(icon).removeClass("icon-chevron-up");
 		}else{
-			$(icon).addClass("icon-arrow-up");
+			$(icon).addClass("icon-chevron-up");
 		}
 	});
+
 	function countDownTimer(){
 		console.log("called");
 		var target_date = new Date("Oct 6, 2014").getTime();

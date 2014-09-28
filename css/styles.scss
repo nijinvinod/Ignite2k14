@@ -84,6 +84,11 @@ header{
 		margin: 0 auto;
 		text-align: center;
 		@include igniteThemes;
+		background: url(../images/header.png) #a80000 no-repeat -286px -231px;
+		background-size: 584px 587px;
+		@include media(max-width $mobile){
+			@include igniteThemes;
+		}
 		color: #f2f8f8;
 		position: relative;
 		overflow: hidden;
@@ -101,12 +106,25 @@ header{
 			.leftSpace{
 				float:left;
 				width:400px;
+				padding-top:20px;
+				h1{
+					font-style: italic;
+					font-size: 44px;
+					font-weight: bold;
+					font-family:arial;
+				}
+				h3{
+					font-size: 26px;
+					font-family:arial;
+				}
 				@include media(min-width 767px max-width 1000px, 6){
 					width:300px;
+					padding-top:0
 				}
 				@include media(max-width $mobile){
 					float:none;
 					width: 100%;
+					padding-top:0
 				}
 				
 			}
@@ -315,11 +333,11 @@ nav{
 			
 
 			.igniteTiltLogo { 
-			    width: 100px; 
+			    width: 173px; 
 			    height: 50px; 
 			    background: #fff url("../images/ignite_logo.png") no-repeat center;
 			    background-size:90px 40px; 
-			    margin: 0 65px;
+			    margin: 0 60px;
 			    position: relative;
 			    &:before {
 				    display: block;
@@ -355,12 +373,18 @@ nav{
 					cursor: pointer;
 					padding:10px 15px;
 					color: #fff;
+					@include media(min-width 767px max-width 1000px, 6){
+						padding:10px 5px;
+					}
 					&.active{
 						color:#ffff00;
 					}
 					&:hover{
 						color:orange;
 					}
+				}
+				@include media(min-width 767px max-width 1000px, 6){
+					margin:5px 20px;
 				}
 			}
 		}
@@ -481,10 +505,19 @@ section{
 			margin-bottom:10px;
 		}
 		.about_container{
+			position: relative;
 			.left{
+				height:80px;
+				top:50%;
+				margin-top:-40px;
+				position: absolute;
 				float: left;
 				width:45%;
-				padding:10% 2% 0 0;
+				@include media(max-width $mobile){
+					position: static;
+					top:0;
+					margin-top: 0;
+				}
 				.avnet_logo{
 					float:right;
 					width:200px;
@@ -507,7 +540,7 @@ section{
 					background-size: 100% 100%;
 					@include media(max-width $mobile){
 						width:125px;
-						height:50px;
+						height:55px;
 						padding:0;
 					}
 				}
@@ -736,16 +769,25 @@ section{
 		}
 	}
 	.box{
+		@include transition-mixin;
+		&:hover{
+		    -webkit-transform: scale(1.05); 
+		    -moz-transform: scale(1.05);
+		    -o-transform: scale(1.05);
+		    transform: scale(1.05);
+		}
+		cursor:pointer;
+	}
+	.box, .boxSol{
 		width:275px;
-		height:250px;
+		height:230px;
 		display: inline-block;
 		vertical-align: top;
 		background: #fff;
-		cursor: pointer;
 		margin:10px;
 		text-align: left;
-		@include transition-mixin;
 		text-align: left;
+
 		.box_img{
 			height:150px;
 			background:#aaa;
@@ -763,12 +805,10 @@ section{
 			font-size:0.8em;
 			color: #999;
 		}
-		&:hover{
-		    -webkit-transform: scale(1.05); 
-		    -moz-transform: scale(1.05);
-		    -o-transform: scale(1.05);
-		    transform: scale(1.05);
-		}
+		
+	}
+	.boxSol{
+		height:200px;
 	}
 
 	.timeline{
@@ -920,6 +960,9 @@ section{
 		.cbp_tmlabel h3.showDesc{
 			position:relative;
 			cursor: pointer;
+			&.noShowDesc{
+				cursor: default;
+			}
 			.leftItem{
 				float: left;
 				width:49%;
@@ -932,13 +975,13 @@ section{
 			.roomName{font-size:14px;color:$igniteTheme}
 			.button{
 				position: absolute;
-			    right: 10px;
+			    right: 0;
 			    top: 50%;
 			    border: 0;
 				color: #000;
 				height: 30px;
 				font-size: 20px;
-				margin-top: -15px;
+				margin-top: -10px;
 				cursor: pointer;
 				background:transparent;
 				@include media(max-width $mobile){
@@ -1031,13 +1074,13 @@ section{
 .sessionDescBox{
 	display: none;
 	position: fixed;
-	height:500px;
+	height:600px;
 	overflow-y:auto; 
 	width:60%;
 	top:50%;
 	left:50%;
 	margin-left:-30%;
-	margin-top: -250px;
+	margin-top: -300px;
 	z-index: 9999;
 	padding: 50px;
 	background: #fff url('../images/ignite_logo.png') no-repeat bottom right; 
@@ -1061,7 +1104,10 @@ section{
 		cursor: pointer;
 	}
 	h2{
-
+		color:$igniteTheme;
+	}
+	h4{
+		color:$igniteTheme;
 	}
 	p{
 		text-align: justify;
@@ -1075,13 +1121,14 @@ section{
 			display: inline-block;
 			width: 100px;
 			height:100px;
-			margin:5px;
+			margin:15px 5px;
 			border-radius: 50px;
 			position: relative;
 			.spkName{
 				position: absolute;
 				left:0;
-				bottom: -20px;
+				bottom: -30px;
+				height:30px;
 				width: 100%;
 				text-align: center;
 				font-size: 14px;
@@ -1091,8 +1138,59 @@ section{
 	}
 }
 
+.dateBoxRight{
+	position: fixed;
+	display: none;
+	right:0;
+	top:50%;
+	width:75px;
+	height:150px;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background:#D3D1C8;
+	z-index: 9999;
+	.inBox{
+		padding:17px;
+		cursor:pointer;
+		&.active{
+			font-weight: bold;
+		}
+	}
+	&.scrolled{
+		display: block;
+		@include media(max-width $mobile){
+			display: none;
+		}
+		@include media(min-width 767px max-width 1000px, 6){
+			display: none;
+		}
+	}
+}
 
+.pagination{
+	padding:10px;
+	text-align: center;
+	display: none;
+	span{
+		color:#000;
+		cursor: pointer;
+		&.active{
+			color:$igniteTheme;
+		}
+	}
+	@include media(max-width $mobile){
+		display: block;
+	}
+	@include media(min-width 767px max-width 1000px, 6){
+		display: block;
+	}
+}
 
-
-
+.igniteHeader{
+	width:300px;
+	height:300px;
+	background: url(../images/ignite.png) center no-repeat;
+	background-size: 100% 100%;
+}
 

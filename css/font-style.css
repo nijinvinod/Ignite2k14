@@ -29,6 +29,12 @@
 .icon-volume:before {
 	content: "\e61d";
 }
+.icon-chevron-down:before {
+	content: "\f0a3";
+}
+.icon-chevron-up:before {
+	content: "\f0a2";
+}
 .icon-megaphone:before {
 	content: "\f077";
 }

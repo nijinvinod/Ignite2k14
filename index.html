@@ -10,7 +10,9 @@
 		<link rel="stylesheet" type="text/css" href="css/font-style.css">
 		<link rel="stylesheet" type="text/css" href="css/gallery/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/gallery/component.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/gallery/modernizr.min.js"></script>
 
@@ -25,13 +27,13 @@
 					<div class="rightSpace">
 						<div class="circle circle1 active"><i class="icon-desktop"></i><div class="status top">BUSINESS</div></div>
 						<div class="circle circle2"><i class="icon-lightbulb"></i><div class="status bottom">IDEAS</div></div>
-						<div class="circle circle3"><i class="icon-presentation"></i><div class="status top">SESSIONS</div></div>
+						<div class="circle circle3"><i class="icon-presentation"></i><div class="status top">TECHNOLOGY</div></div>
 						<div class="circle circle4"><i class="icon-linegraph"></i><div class="status bottom">GROWTH</div></div>
 					</div>
 					<div class="leftSpace">
 						<h1>Ignite 2014</h1>
 						<h3>October 6-7, 2014</h3>
-						<h4>HYATT REGENCY Chennai, India</h4>
+						<h4>Hyatt Regency Chennai, India</h4>
 						<div class="countdown">
 							<div class="timerSec"><div id="t_days">0</div>days</div>
 							<div class="timerSec"><div id="t_hrs">00</div>hours</div>
@@ -52,7 +54,7 @@
 				<div class="rightNav">
 					<ul>
 						<li class="navItem" name="home">HOME</li>
-					<!--	<li class="navItem" name="sessions">SESSIONS</li> -->
+						<li class="navItem" name="sessions">SESSIONS</li> 
 						<li class="navItem" name="guests">GUESTS</li>
 						<li class="navItem" name="schedule">SCHEDULE</li>
 						<li class="navItem" name="gallery">GALLERY</li>
@@ -66,7 +68,7 @@
 			<nav class="mobileNav">
 				<ul>
 					<li class="navMobItem" name="home"><i class="icon-home"></i> HOME</li>
-					<!--<li class="navMobItem" name="sessions"><i class="icon-microphone"></i> SESSIONS</li>-->
+					<li class="navMobItem" name="sessions"><i class="icon-microphone"></i> SESSIONS</li>
 					<li class="navMobItem" name="guests"><i class="icon-user2"></i> GUESTS</li>
 					<li class="navMobItem" name="schedule"><i class="icon-alarm"></i> SCHEDULE</li>
 					<li class="navMobItem" name="gallery"><i class="icon-camera"></i> GALLERY</li>
@@ -89,7 +91,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					<div class="nextLink" id="id_guests"></div>
+					<div class="nextLink" id="id_sessions"></div>
 				</div>
 			</section>
 			<!-- END: IGNITE ABOUT US -->
@@ -98,141 +100,148 @@
 			<section>
 				<div class="content centerContent">
 					<div class="heading">Sessions</div>
-					<!--
+					
 					<div class="category">
 						<ul>
-							<li class="catItem active" name="psm">Portal-Social-Mobile</li>
-							<li class="catItem" name="com">Commerce</li>
-							<li class="catItem" name="qa">Quality Assurance</li>
-							<li class="catItem" name="ms">Managed Services</li>
-							<li class="catItem" name="gen">General</li>
+							<li class="catItem active" name="psm">Sessions</li>
+							<li class="catItem" name="com">Solution Space</li>
 						</ul>
 					</div>
 					<div class="categorySlider">
 						<div class="slide" id="slide_psm">
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/mark.jpg"/>
-								</div>
-								<div class="box_topic">Dalusia - Let's support Worklight</div>
-								<div class="box_speakers">Nijin Vinodan, Kalyanaraman</div>
+							<div class="box" name="cognitive">
+								<div class="box_img"><img src="images/session_pictures/1_IBM_WATSON.png"/></div>
+								<div class="box_topic">Cognitive Computing : Building your own Nano-Watson</div>
 							</div>
-							<div class="box" name="java">
-								<div class="box_img">
-									<img src="images/speakers/sundar.jpg"/>
-								</div>
-								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
-								<div class="box_speakers">Abhishek Jain</div>
+
+							<div class="box" name="mobiletesting">
+								<div class="box_img"><img src="images/session_pictures/2_Mobile_Testing.png"/></div>
+								<div class="box_topic">Mobile Testing: An Evolution</div>
 							</div>
-							<div class="box" name="commerce">
-								<div class="box_img">
-									<img src="images/speakers/bill.jpg"/>
-								</div>
-								<div class="box_topic">Unexplored Java</div>
-								<div class="box_speakers">Krishna Rao, Navyateja Narravula, Uthkarsh Agni</div>
+							
+							<div class="box" name="portal">
+								<div class="box_img"><img src="images/session_pictures/3_IBM_Portal8.png"/></div>
+								<div class="box_topic">IBM Websphere Portal 8.5 - The Digital Experience Platform</div>
 							</div>
+
+							<div class="box" name="hybris">
+								<div class="box_img"><img src="images/session_pictures/4_Hybris.png"/></div>
+								<div class="box_topic">Hybris Unveiled : Ten things you must know!</div>
+							</div>
+
+							<div class="box" name="qatools">
+								<div class="box_img"><img src="images/session_pictures/5_QA_Tools.png"/></div>
+								<div class="box_topic">SamePage & CTM Genie: New QA Tools</div>
+							</div>
+
+							<div class="box" name="clash">
+								<div class="box_img"><img src="images/session_pictures/6_ClashOfTitans.png"/></div>
+								<div class="box_topic">Clash of Titans</div>
+							</div>
+
+							<div class="box" name="evanMob">
+								<div class="box_img"><img src="images/session_pictures/Evans_Mobile_Session.png"/></div>
+								<div class="box_topic">Evan's Mobile Session</div>
+							</div>
+
+							<div class="box" name="ace2014">
+								<div class="box_img"><img src="images/session_pictures/7_ACE2014.png"/></div>
+								<div class="box_topic">ACE 2014: Unlocking true potential</div>
+							</div>
+
+							<div class="box" name="projectX">
+								<div class="box_img"><img src="images/session_pictures/8_Project_X.png"/></div>
+								<div class="box_topic">PureApplication Service on SoftLayer</div>
+							</div>
+
+							<div class="box" name="automate">
+								<div class="box_img"><img src="images/session_pictures/9_IBM-Commerce.png"/></div>
+								<div class="box_topic">Automate and Accelerate Commerce apps</div>
+							</div>
+
+							<div class="box" name="webautomation">
+								<div class="box_img"><img src="images/session_pictures/10_Web_Automation.png"/></div>
+								<div class="box_topic">Web Automation Testing & Beyond</div>
+							</div>
+
+							<div class="box" name="mashup">
+								<div class="box_img"><img src="images/session_pictures/11_Mashup.png"/></div>
+								<div class="box_topic">#Mashup</div>
+							</div>
+
+							<div class="box" name="bluemix">
+								<div class="box_img"><img src="images/session_pictures/12_IBM_Bluemix.png"/></div>
+								<div class="box_topic">Build apps in minutes using Bluemix</div>
+							</div>
+
+							<div class="box" name="qaeffectiveness">
+								<div class="box_img"><img src="images/session_pictures/13_QA_BestPrac.png"/></div>
+								<div class="box_topic">Enhancing QA Effectiveness: QA Best Practices</div>
+							</div>
+
+							<div class="box" name="xdx">
+								<div class="box_img"><img src="images/session_pictures/14_XDX.png"/></div>
+								<div class="box_topic">XDX and Commerce Integration patterns</div>
+							</div>
+
 						</div>
 
 						<div class="slide" id="slide_com">
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/steve.jpg"/>
-								</div>
-								<div class="box_topic">Selfie Slider</div>
-								<div class="box_speakers">Mohit Khakharia</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/1_TV_Commerce.png"/></div>
+								<div class="box_topic">TV Commerce</div>
 							</div>
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/jobs.jpg"/>
-								</div>
-								<div class="box_topic">Costco Mobile - Challenges, Solutions & a Success Story !!!</div>
-								<div class="box_speakers">Aman Sharma</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/2_Ikart.png"/></div>
+								<div class="box_topic">iKart</div>
 							</div>
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/mark.jpg"/>
-								</div>
-								<div class="box_topic">Custom Widgets for Enhancing C3 Community Experience</div>
-								<div class="box_speakers">Ganesh Babu</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/3_Hybris.png"/></div>
+								<div class="box_topic">Hybris</div>
 							</div>
-						</div>
-						<div class="slide" id="slide_qa">
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/steve.jpg"/>
-								</div>
-								<div class="box_topic">Avnet QA - Mobile Automation Strategy (MAS)</div>
-								<div class="box_speakers">Vignesh Karunakaran</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/4_Smarter_Commerce.png"/></div>
+								<div class="box_topic">Smarter Commerce</div>
 							</div>
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/sundar.jpg"/>
-								</div>
-								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
-								<div class="box_speakers">Abhishek Jain</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/5_Nano_Watson.png"/></div>
+								<div class="box_topic">Nano Watson</div>
 							</div>
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/bill.jpg"/>
-								</div>
-								<div class="box_topic">Unexplored Java</div>
-								<div class="box_speakers">Krishna Rao, Navyateja Narravula, Uthkarsh Agni</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/6_CSR_Toolkit.png"/></div>
+								<div class="box_topic">CSR Toolkit</div>
 							</div>
-						</div>
-						<div class="slide" id="slide_ms">
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/steve.jpg"/>
-								</div>
-								<div class="box_topic">Selfie Slider</div>
-								<div class="box_speakers">Mohit Khakharia</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/7_BPM_UI_Kit.png"/></div>
+								<div class="box_topic">BPM UI Kit</div>
 							</div>
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/steve.jpg"/>
-								</div>
-								<div class="box_topic">Avnet QA - Mobile Automation Strategy (MAS)</div>
-								<div class="box_speakers">Vignesh Karunakaran</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/ArkTest.png"/></div>
+								<div class="box_topic">ArkTest</div>
 							</div>
-							<div class="box" name="dalusia">
-								<div class="box_img">
-									<img src="images/speakers/sundar.jpg"/>
-								</div>
-								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
-								<div class="box_speakers">Abhishek Jain</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/DeviceArk.png"/></div>
+								<div class="box_topic">DeviceArk</div>
 							</div>
-						</div>
-						<div class="slide" id="slide_gen">
-							<div class="box">
-								<div class="box_img">
-									<img src="images/speakers/steve.jpg"/>
-								</div>
-								<div class="box_topic">Avnet QA - Mobile Automation Strategy (MAS)</div>
-								<div class="box_speakers">Vignesh Karunakaran</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/SamePage.png"/></div>
+								<div class="box_topic">Samepage</div>
 							</div>
-							<div class="box">
-								<div class="box_img">
-									<img src="images/speakers/sundar.jpg"/>
-								</div>
-								<div class="box_topic">Fast, Offline and Modern Web Apps</div>
-								<div class="box_speakers">Abhishek Jain</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/sol-space/Scrummer.png"/></div>
+								<div class="box_topic">Scrummer</div>
 							</div>
-							<div class="box">
-								<div class="box_img">
-									<img src="images/speakers/mark.jpg"/>
-								</div>
-								<div class="box_topic">Dalusia - Let's support Worklight</div>
-								<div class="box_speakers">Nijin Vinodan, Kalyanaraman</div>
+							<div class="boxSol" name="">
+								<div class="box_img"><img src="images/session_pictures/5_QA_Tools.png"/></div>
+								<div class="box_topic">BCM Genie</div>
 							</div>
 						</div>
 					</div>
 					
-					<div class="clearfix"></div>-->
-					<div class="centerContent">
-						<h1><i class="icon-busy" style="font-size:80px;color:#A80000;margin-bottom:10px;display:block;"></i></h1>
-						<h2></h2><br/>
-						
-						Stay Tuned !<br/>
+					<div class="clearfix"></div>
+					<div class="pagination">View:   
+						<span class="catItem" name="psm">Sessions </span>| 
+						<span class="catItem smallSchItem" name="com">Solutions</span>
 					</div>
 					<div class="nextLink" id="id_guests"></div>
 				</div>
@@ -309,8 +318,9 @@
 									<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>Oct 6</span> <span>08:00<div class="mer">AM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-food"></i></div>
 									<div class="cbp_tmlabel">
-										<h3 class="showDesc">
+										<h3 class="showDesc noShowDesc">
 											<div class="title">Breakfast</div>
+
 										</h3>
 									
 									</div>
@@ -320,7 +330,7 @@
 									<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>Oct 6</span> <span>09:00<div class="mer">AM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-microphone"></i></div>
 									<div class="cbp_tmlabel">
-										<h3 class="showDesc">
+										<h3 class="showDesc noShowDesc">
 											<div class="title">Ignite 2014 - Kick Off</div>
 											
 										</h3>
@@ -336,6 +346,7 @@
 										<h3 class="showDesc">
 											<div class="title">Cognitive Computing : Building your own Nano-Watson</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -352,6 +363,7 @@
 										<h3 class="showDesc">
 											<div class="title">Mobile Testing: An Evolution</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -368,6 +380,7 @@
 										<h3 class="showDesc">
 											<div class="title">IBM Websphere Portal 8.5 - The Digital Experience Platform</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -384,6 +397,7 @@
 										<h3 class="showDesc">
 											<div class="title">Hybris Unveiled : Ten things you must know!</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -398,8 +412,9 @@
 									<div class="cbp_tmicon"><i class="icon-presentation"></i></div>
 									<div class="cbp_tmlabel">
 										<h3 class="showDesc">
-											<div class="title">QA tools 2014</div>
+											<div class="title">SamePage & CTM Genie: New QA Tools</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -420,6 +435,7 @@
 										<h3 class="showDesc">
 											<div class="title">Clash of Titans</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -433,7 +449,7 @@
 									<time class="cbp_tmtime"><span></span> <span>12:15<div class="mer">PM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-food"></i></div>
 									<div class="cbp_tmlabel">
-										<h3 class="showDesc">
+										<h3 class="showDesc noShowDesc">
 											<div class="title">Lunch</div>
 										</h3>				
 									</div>
@@ -443,7 +459,7 @@
 									<time class="cbp_tmtime"><span></span> <span>01:15<div class="mer">PM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-presentation"></i></div>
 									<div class="cbp_tmlabel">
-										<h3 class="showDesc">
+										<h3 class="showDesc noShowDesc">
 											<div class="title">Evan's Mobile Session</div>
 										</h3>				
 									</div>
@@ -455,6 +471,7 @@
 									<div class="cbp_tmlabel">
 										<h3 class="showDesc">
 											<div class="title">ROFLMAO</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>				
 										<p class="schContent">
 											Time for some Fun Events
@@ -464,12 +481,13 @@
 								
 
 								<li>
-									<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>Oct 6</span> <span>02:45<div class="mer">PM</div></span></time>
+									<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>Oct 6</span> <span>02:40<div class="mer">PM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-presentation"></i></div>
 									<div class="cbp_tmlabel">
 										<h3 class="showDesc">
 											<div class="title">ACE 2014 : Unlocking true potential</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -484,11 +502,13 @@
 									<div class="cbp_tmicon"><i class="icon-presentation"></i></div>
 									<div class="cbp_tmlabel">
 										<h3 class="showDesc">
-											<div class="title">Project X</div>
+											<div class="title">PureApplication Service on SoftLayer</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
-									
-										
+										<p class="schContent">
+											IBM PureApplication Service on SoftLayer is the fastest and easiest way to bring enterprise applications to the cloud. Now you can extend enterprise applications to the cloud in minutes. This session covers how to get started and also the various offerings of the product.
+										</p>
 										
 									</div>
 								</li>
@@ -500,6 +520,7 @@
 										<h3 class="showDesc">
 											<div class="title">Automate and Accelerate Commerce apps</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -521,6 +542,7 @@
 										<h3 class="showDesc">
 											<div class="title">Web Automation Testing & Beyond</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 										<p class="schContent">
 											This session will focus on the different strategies formed to efficiently test web projects using  automation and how they have evolved with the changing demands of testing.<br/><br/>
@@ -537,7 +559,7 @@
 									<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span></span> <span>04:20<div class="mer">PM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-coffee"></i></div>
 									<div class="cbp_tmlabel">
-										<h3 class="showDesc">
+										<h3 class="showDesc noShowDesc">
 											<div class="title">Tea Break</div>
 										</h3>				
 									</div>
@@ -550,10 +572,11 @@
 										<h3 class="showDesc">
 											<div class="title">#Mashup</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
-											#First presentation would be about few custom widgets which could greatly benefit  the C3 community owners and members. The idea over here is to develop rss/atom feed parsing widgets, a widget that shows upcoming events from meetup.com, widget that interacts with youtube and twitter.​<br/><br/>
+											#First presentation would be about few custom widgets which could greatly benefit  the C3 community owners and members. The idea over here is to develop rss/atom feed parsing widgets, a widget that shows upcoming events from meetup.com, widget that interacts with youtube and twitter.<br/><br/>
 
 											#Second presentation will be a walk through on how personalized Dynamic Web Experience can be achieved with IBM WCM.
 
@@ -569,6 +592,7 @@
 										<h3 class="showDesc">
 											<div class="title">Build apps in minutes using Bluemix</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -585,6 +609,7 @@
 										<h3 class="showDesc">
 											<div class="title">Enhancing QA Effectiveness: QA Best Practices</div>
 											<div class="roomName">Hall A</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -601,6 +626,7 @@
 										<h3 class="showDesc">
 											<div class="title">XDX and Commerce Integration patterns</div>
 											<div class="roomName">Hall B</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>
 									
 										<p class="schContent">
@@ -616,6 +642,7 @@
 									<div class="cbp_tmlabel">
 										<h3 class="showDesc">
 											<div class="title">Sounds of Ascendant</div>
+											<i class="icon-chevron-down button"></i>
 										</h3>				
 										<p class="schContent">
 											Avnet's own Musical Band bringing you the best of Kollywood, Bollywood and Hollywood Music.
@@ -627,7 +654,7 @@
 									<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span></span> <span>07:45<div class="mer">PM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-food"></i></div>
 									<div class="cbp_tmlabel">
-										<h3 class="showDesc">
+										<h3 class="showDesc noShowDesc">
 											<div class="title">Dinner</div>
 										</h3>				
 									</div>
@@ -648,7 +675,7 @@
 											<div class="roomName">Ramanujam IT Park</div>
 										</h3>
 									
-										<p class="schContent">
+										<p class="schContent" style="display:block">
 											For the past year we have built various in-house apps, tools and various other cool stuff that we want to showcase. Come join us in our new facility at Ramanujam IT city to get hands on these valuable assets. Meet, interact and engage with our developers who will be present to showcase their work.<br/><br/>
 											
 											1. Smarter Commerce <br/>
@@ -667,7 +694,7 @@
 										
 									</div>
 								</li>
-
+								<!--
 								<li>
 									<time class="cbp_tmtime"><span></span> <span>01:00<div class="mer">PM</div></span></time>
 									<div class="cbp_tmicon"><i class="icon-food"></i></div>
@@ -677,6 +704,7 @@
 										</h3>				
 									</div>
 								</li>
+								-->
 							</ul>
 						</div>
 					</div>
@@ -689,6 +717,11 @@
 						
 						Stay Tuned !<br/>
 					</div>-->
+					<div class="pagination">View Schedule: 
+						<span class="catSchItem" name="day1">Oct 6 </span>| 
+						<span class="catSchItem smallCatSchItem" name="day2">Oct 7</span>
+					</div>
+
 					<div class="nextLink" id="id_gallery"></div>
 				</div>
 			</section>
@@ -705,67 +738,67 @@
 							<figure>
 								<a class="photostack-img"><img src="img/gallery/1.jpg" alt="img01"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Serenity Beach</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure>
 								<a class="photostack-img"><img src="img/gallery/14.jpg" alt="img02"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Happy Days</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure>
 								<a class="photostack-img"><img src="img/gallery/15.jpg" alt="img03"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Beautywood</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure>
 								<a class="photostack-img"><img src="img/gallery/16.jpg" alt="img04"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Heaven of time</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure>
 								<a class="photostack-img"><img src="img/gallery/2.jpg" alt="img05"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Speed Racer</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure>
 								<a class="photostack-img"><img src="img/gallery/6.jpg" alt="img06"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Forever this</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure data-dummy>
 								<a href="#" class="photostack-img"><img src="img/gallery/7.jpg" alt="img07"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Lovely Green</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure data-dummy>
 								<a href="#" class="photostack-img"><img src="img/gallery/8.jpg" alt="img08"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Wonderful</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure data-dummy>
 								<a href="#" class="photostack-img"><img src="img/gallery/9.jpg" alt="img09"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Love Addict</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure data-dummy>
 								<a href="#" class="photostack-img"><img src="img/gallery/10.jpg" alt="img10"/></a>
 								<figcaption>
-									<h2 class="photostack-title">Friendship</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure data-dummy>
 								<a href="#" class="photostack-img"><img src="img/gallery/11.jpg" alt="img11"/></a>
 								<figcaption>
-									<h2 class="photostack-title">White Nights</h2>
+									<h2 class="photostack-title"></h2>
 								</figcaption>
 							</figure>
 							<figure data-dummy>
@@ -893,54 +926,268 @@
 
 
 		<!-- Start of POP Ups -->
-		<div class="sessionDescBox" id="pop_dalusia">
+		<div class="sessionDescBox" id="pop_cognitive">
 			<div class="closeIcon"><i class="icon-times-circle"></i></div>
-			<h2>Dalusia</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<h2>Cognitive Computing : Building your own Nano-Watson</h2>
+			<p>History was created when Watson won the Jeopardy contest overcoming two of the most successful human contestants ever. This sparked the era of commercialisation of Cognitive Computing capabilities - IBM leading the way with advanced research on Watson. With the explosion of big data, IoT devices, smart machines, Cognitive Computing is all poised to forever change the way humans interact with machines. This session aims to give a primer on Cognitive Computing, explore the architecture behind Watson, and some real time use cases related to our business context. We also intend to give a sneak peek into a Watson-inspired cognitive engine, which we call as nano-Watson.</p>
 			<div class="scheduledTime">
 				<h4>Session Time</h4>
-				<p>Oct 6, 2014 10:00 AM</p>
+				<p>Oct 6, 2014 09:45 AM</p>
 			</div>
 			<div class="speakers">
 				<h4>Speakers</h4>
-				<div class="spkImage" style="background:url('images/ses-speakers/kalyan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Kalyan</div></div>
-				<div class="spkImage" style="background:url('images/ses-speakers/nijin.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Nijin</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/maharajan.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Maharajan Rathakrishnan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/john.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">John Eipe</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/raguram.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Raguraman Krishnamoorthy</div></div>
 				
 			</div>
 		</div>
 
-		<div class="sessionDescBox" id="pop_java">
+		<div class="sessionDescBox" id="pop_mobiletesting">
 			<div class="closeIcon"><i class="icon-times-circle"></i></div>
-			<h2>Java</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<h2>Mobile Testing: An Evolution</h2>
+			<p>Constant evolution of the methods and approaches for Mobile Application Testing is needed. Key challenges manifest due to the increasing variety of Mobile Devices, differences in screen dimensions, input methods, different hardware capabilities, diversity in operating system platforms. Testing a single application across multiple devices running on the same platform and every platform poses a unique challenge for testers. Our Mobile Application testing strategy has evolved over time to handle the challenges. This session aims to review the derivation of ever changing Mobile Application Testing strategy.</p>
 			<div class="scheduledTime">
 				<h4>Session Time</h4>
-				<p>Oct 6, 2014 10:00 AM</p>
+				<p>Oct 6, 2014 09:45 AM</p>
 			</div>
 			<div class="speakers">
 				<h4>Speakers</h4>
-				<div class="spkImage" style="background:url('images/ses-speakers/arthi.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Arthi</div></div>
-				<div class="spkImage" style="background:url('images/ses-speakers/srini.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Srini</div></div>
-				<div class="spkImage" style="background:url('images/ses-speakers/manju.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Manju</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/vandu.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Vignesh Karunakaran</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/marthandan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Vignesh Marthandan</div></div>
 			</div>
 		</div>
 
-		<div class="sessionDescBox" id="pop_commerce">
+		<div class="sessionDescBox" id="pop_portal">
 			<div class="closeIcon"><i class="icon-times-circle"></i></div>
-			<h2>Commerce</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<h2>IBM Websphere Portal 8.5 - The Digital Experience Platform</h2>
+			<p>Portal 8.5 brings a whole new array of features to its cap. In this session we will explore DDC (Digital Data Connector) and WAB (Web Application Bridge). DDC is used to integrate data from external data sources on your portal pages by using IBM Web Content Manager presentation components. It can render social data that you have on your IBM Connections server or on other social platforms in the context of your portal pages. Other possible data sources include news feeds, task lists, product catalog information, to name just a few. The IBM Web Application Bridge (or WAB) is a feature that uses reverse proxy technology to integrate different web applications natively inside WebSphere Portal pages so that WebSphere Portal becomes the single window of access to users.</p>
 			<div class="scheduledTime">
 				<h4>Session Time</h4>
-				<p>Oct 6, 2014 10:00 AM</p>
+				<p>Oct 6, 2014 10:35 AM</p>
 			</div>
 			<div class="speakers">
 				<h4>Speakers</h4>
-				<div class="spkImage" style="background:url('images/ses-speakers/kalyan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Kalyan</div></div>
-				<div class="spkImage" style="background:url('images/ses-speakers/nijin.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Nijin</div></div>
-				
+				<div class="spkImage" style="background:url('images/ses-speakers/chintan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Chintan Shah</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/arthi.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Arthi Jayaraman</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/radhika.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Radhikaa Bhaskaran</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_hybris">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Hybris Unveiled : Ten things you must know!</h2>
+			<p>In a short span of 3 years between 2010 and 2013, Hybris has graduated from being a niche player to a leader in Gartner's magic quadrant for eCommerce vendors. With the recent acquisition by SAP and significant momentum with Tier 1 and Tier 2 players, Hybris in eCommerce platform is probably poised to do what Facebook did to MySpace and other social networks. We, at Avnet, have been investing significant efforts in getting ourselves enabled in this platform to ride this wave. In this context, this session will discuss our perspective on the top 10 reasons on how differentiates itself from other Tier 1 players. The discussion will be a blend of technical and business related findings and observations.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 10:35 AM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/senthil.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Senthil Arjunan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/ganeshbalkumar.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Ganesh Balkumar</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_qatools">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>SamePage & CTM Genie: New QA Tools</h2>
+			<p>Innovation is the key to future success. We would like to showcase two such innovations.<br/><br/><b>SamePage</b><br/>An interactive, anytime, anywhere power-packed analytics tool targeted at executive level audience to enable data driven decision making for SDLC projects - that are managed through various ALM tools.<br/><br/><b>Compatibility Testing Matrix - Gen Engine</b><br/>Testing across browsers has always been a high effort job, because of the various rendering engines of browsers, versions, and supporting operating systems and the mobile versions of the browsers. To test every page/screen of every application (Web and mobile) on every version of browser and operating system combination available in the market is not feasible. The Compatibility Testing Matrix - Gen Engine is an evolving algorithm which can be utilized to help arrive at a feasible and optimal percentage of test coverage across different browsers.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 11:25 AM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/manish.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Manish Bholanath</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/vinod.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Vinod Shyamsundar</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_clash">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Clash of Titans</h2>
+			<p>Get a glimpse of different technologies used for mobile application development. The pros and cons of each technology will be discussed in detail along various lines ranging from performance to security. It also includes a visual demo of an app developed using the debated technologies.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 11:25 AM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/sharanaina.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Ainapurapu Sharan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/srini.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Dodda Srinivasan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/kalyan.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Kalyanraman Bhaskar</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/manju.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Manju Muthaiya</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/nijin.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Nijin Vinodan</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_ace2014">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>ACE 2014: Unlocking true potential</h2>
+			<p>A consultant is a mix of technical skill, business acumen and social aptitude. The Avnet Center of Excellence paves the way for the ACE trainee in its growth by providing real world training. This presentation covers the story of ACE Trainee journey from a hard working nerd to a potential.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 02:40 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/dinesh.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Dinesh Pandiyan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/madhan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Madhankumar Ramu</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/janani.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Janani Balasubramanian</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/jennifer.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Jennifer Gabriela</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_automate">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Automate and Accelerate Commerce apps</h2>
+			<p><b>Development</b><br/>Increasing the Productivity of a Commerce Developer by 20% and more, isn't that interesting?IBM eCommerce Programming model involves set of repetitive task to be performed by developer in order to get basic workflow done. this set of task are time consuming and error prone. We automate this process, so a developer will be required only to focus on core business logic rather spending time on tasks like Creating Struts Entry, Creating Access Control Policies etc.,<br/><br/><b>QA</b><br/>Finding bugs and making eCommerce Sites bug free is a challenging task for a QA, however all E-Commerce sites follows same model from Product Category Page -&gt; Product Details Page -&gt; Carts -&gt; Payment & Address -&gt; Review and Confirm Page. We will automate the Testing Process for eCommerce site, which  reduces the whole testing time for the eCommerce site and can be iterated anytime as required for each development iteration.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 03:30 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/karthi.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Karthikeyan Murugesan</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/rajeshwaran.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Rajeshwaran Murugan</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_webautomation">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Web Automation Testing & Beyond</h2>
+			<p>This session will focus on the different strategies formed to efficiently test web projects using  automation and how they have evolved with the changing demands of testing.<br/><br/>
+											1. Changing trends in Automation Testing<br/>
+											2. Web Automation best practices<br/>
+											3. Expanding our automation offering capability<br/>
+											4. Automation on the Cloud?<br/></p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 03:30 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/manish.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Manish Bholanath</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/vidya.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Vidhya Thirumavalavan</div></div>
+			</div>
+		</div>
+
+
+		<div class="sessionDescBox" id="pop_mashup">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>#Mashup</h2>
+			<p>#First presentation would be about few custom widgets which could greatly benefit  the C3 community owners and members. The idea over here is to develop rss/atom feed parsing widgets, a widget that shows upcoming events from meetup.com, widget that interacts with youtube and twitter.<br/><br/>#Second presentation will be a walk through on how personalized Dynamic Web Experience can be achieved with IBM WCM.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 04:40 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/aravindan.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Aravindan Chinnadurai</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/divya.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Divyalakshmi Mahendran</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_bluemix">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Build apps in minutes using Bluemix</h2>
+			<p>PAAS has been around for some time and finally IBM has taken note of it. We present you IBM Bluemix, hailed as the developer's nirvana saving time, cost and worry for both developers and stakeholders. This presentation covers a short introduction to PAAS and current PAAS offerings, Bluemix overview and its features followed by how everything fits together and finally a short demo.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 04:40 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/ramkumar.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Ramkumar Kuppuchamy</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/john.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">John Eipe</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/raguram.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Raguraman Krishnamoorthy</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_qaeffectiveness">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Enhancing QA Effectiveness: QA Best Practices</h2>
+			<p>The ever-increasing complexity of today's software and their target deployments, combined with greater competitive pressures have escalated the need for testing to new heights. The testing team work under perennial combination of circumstances such as compressed schedules, fluid requirements and delays in various upstream dependencies. Facing these challenges has brought to light new solutions and approaches. Many of the key solutions can and have been converted to best practices, to be applied to new/upcoming projects. We would like to walk you through the various interesting facets of the Quality Assurance practice.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 05:30 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/sujan.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Sujan Dharmaiahgari</div></div>
+				<div class="spkImage" style="background:url('images/ses-speakers/vinod.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Vinod Shyamsundar</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_xdx">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>XDX and Commerce Integration patterns</h2>
+			<p>While the pace of business and the speed of content continue to accelerate, so does the demand to reach your audiences through a rich and robust online experience, through multiple channels and devices. IBM's XDX is uniquely designed to help create, manage, simplify and integrate your processes to meet these demands. IBM WebSphere Commerce is a cross-channel e-commerce platform that enables high-volume business-to-consumer (B2C) and business-to-business (B2B) sales to customers using multiple channels-web, mobile, social, store or phone. It supports better marketing, selling and fulfilment with advanced web and mobile stores, social integration and personalised marketing and merchandising tools. In this session we will see how to integrate these XDX and commerce technologies together for a better customer experience.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 05:30 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/ganeshbabu.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Ganesh Babu</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_projectX">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>PureApplication Service on SoftLayer</h2>
+			<p>IBM PureApplication Service on SoftLayer is the fastest and easiest way to bring enterprise applications to the cloud. Now you can extend enterprise applications to the cloud in minutes. This session covers how to get started and also the various offerings of the product.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 02:40 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/ranjan.JPG') no-repeat center; background-size:100% 100%"><div class="spkName">Ranjan Bhagirathan</div></div>
+			</div>
+		</div>
+
+		<div class="sessionDescBox" id="pop_evanMob">
+			<div class="closeIcon"><i class="icon-times-circle"></i></div>
+			<h2>Evan's Mobile Session</h2>
+			<p>A session on mobile by Evan Borysko.</p>
+			<div class="scheduledTime">
+				<h4>Session Time</h4>
+				<p>Oct 6, 2014 01:15 PM</p>
+			</div>
+			<div class="speakers">
+				<h4>Speakers</h4>
+				<div class="spkImage" style="background:url('images/ses-speakers/evan.jpg') no-repeat center; background-size:100% 100%"><div class="spkName">Evan Borysko</div></div>
 			</div>
 		</div>
 
 		<!-- End of Pop Ups -->
+
+
+		<!-- Schedule Date-->
+		<div id="dateBoxRight" class="dateBoxRight">
+			<div class="inBox catSchItem active" name="day1">
+				<i class="icon-calendar"></i><br/>
+				Oct 6
+			</div>
+			<div class="inBox catSchItem smallCatSchItem" name="day2">
+				<i class="icon-calendar"></i><br/>
+				Oct 7
+			</div>
+		</div>
+
+		<!-- Schedule Date-->
+		<div id="sesBoxRight" class="dateBoxRight" style="width:100px">
+			<div class="inBox catItem active" name="psm">
+				<i class="icon-presentation"></i><br/>
+				Sessions
+			</div>
+			<div class="inBox catItem smallCatItem" name="com">
+				<i class="icon-lightbulb"></i><br/>
+				Solutions
+			</div>
+		</div>
+
 	</body>
 </html>
