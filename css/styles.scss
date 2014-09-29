@@ -79,8 +79,41 @@ $mobile:"767px";
 		}
 	}
 }
+
+.appStoreLink{
+    text-align: center;
+    color:#aaa;
+    margin-top: 50px;
+    font-size: 14px;
+    .google{
+        display: inline-block;
+        width:120px;
+        margin-right: 10px;
+        margin-top: 5px;
+        height:40px;
+        background:url('../images/apps/google.png') no-repeat center;
+        background-size:100% 100%;
+    }
+    .apple{
+        display: inline-block;
+        width:120px;
+        height:40px;
+        background:url('../images/apps/apple.png') no-repeat center;
+        background-size:100% 100%;
+    }
+    @include media(max-width $mobile){
+        display: none;
+    }
+    &.mobileAppStore{
+        display: none;
+         @include media(max-width $mobile){
+            display: block;
+        }
+    }
+}
 header{
 	&#id_home{
+        
 		margin: 0 auto;
 		text-align: center;
 		@include igniteThemes;
@@ -94,14 +127,14 @@ header{
 		overflow: hidden;
 		.headerContainer{
 			width:1000px;
-			margin:100px auto 75px auto;
+			margin:100px auto 0px auto;
 			@include media(max-width $mobile){
 				width: 100%;
 				margin:75px 0 50px 0;
 			}
 			@include media(min-width 767px max-width 1000px, 6){
 				width:760px;
-				margin:75px auto 50px auto;
+				margin:75px auto 0px auto;
 			}
 			.leftSpace{
 				float:left;
@@ -470,15 +503,20 @@ footer{
 						opacity: 0.6
 					}
 				}
-				.androidIcon{
-					color:#A4C739;
-					font-size: 36px;
-				}
-				.appleIcon{
-					color:#fff;
-					font-size: 36px;
-				}
-
+				.google{
+                    display: block;
+                    width:100px;
+                    height:40px;
+                    background:url('../images/apps/google.png') no-repeat center;
+                    background-size:100% 100%;
+                }
+                .apple{
+                    display:block;
+                    width:100px;
+                    height:40px;
+                    background:url('../images/apps/apple.png') no-repeat center;
+                    background-size:100% 100%;
+                }
 			}
 		}
 	}
@@ -1103,6 +1141,23 @@ section{
 		font-size: 30px;
 		cursor: pointer;
 	}
+    .nextIcon, .prevIcon {
+        @include media(max-width $mobile){
+            display:none;
+        }
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        margin-top: -15px;
+        right: 10px;
+        font-size: 30px;
+        cursor: pointer;text-align: center;
+        &.hideMe{display: none}
+    }
+    .prevIcon{
+        left:10px;
+    }
 	h2{
 		color:$igniteTheme;
 	}

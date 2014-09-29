@@ -126,6 +126,42 @@ html {
   -ms-transition: all .5s;
 }
 
+.appStoreLink {
+  text-align: center;
+  color: #aaa;
+  margin-top: 50px;
+  font-size: 14px;
+}
+.appStoreLink .google {
+  display: inline-block;
+  width: 120px;
+  margin-right: 10px;
+  margin-top: 5px;
+  height: 40px;
+  background: url("../images/apps/google.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.appStoreLink .apple {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background: url("../images/apps/apple.png") no-repeat center;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 767px) {
+  .appStoreLink {
+    display: none;
+  }
+}
+.appStoreLink.mobileAppStore {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .appStoreLink.mobileAppStore {
+    display: block;
+  }
+}
+
 header#id_home {
   margin: 0 auto;
   text-align: center;
@@ -143,7 +179,7 @@ header#id_home {
 }
 header#id_home .headerContainer {
   width: 1000px;
-  margin: 100px auto 75px auto;
+  margin: 100px auto 0px auto;
 }
 @media screen and (max-width: 767px) {
   header#id_home .headerContainer {
@@ -154,7 +190,7 @@ header#id_home .headerContainer {
 @media screen and (min-width: 767px) and (max-width: 1000px) {
   header#id_home .headerContainer {
     width: 760px;
-    margin: 75px auto 50px auto;
+    margin: 75px auto 0px auto;
   }
 }
 header#id_home .headerContainer .leftSpace {
@@ -604,13 +640,19 @@ footer .fot_content .cell.social .app:hover {
   -ms-transition: all .5s;
   opacity: 0.6;
 }
-footer .fot_content .cell.social .androidIcon {
-  color: #A4C739;
-  font-size: 36px;
+footer .fot_content .cell.social .google {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: url("../images/apps/google.png") no-repeat center;
+  background-size: 100% 100%;
 }
-footer .fot_content .cell.social .appleIcon {
-  color: #fff;
-  font-size: 36px;
+footer .fot_content .cell.social .apple {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: url("../images/apps/apple.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 section {
@@ -1204,6 +1246,28 @@ section .timeline .mer {
   right: 5px;
   font-size: 30px;
   cursor: pointer;
+}
+.sessionDescBox .nextIcon, .sessionDescBox .prevIcon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .sessionDescBox .nextIcon, .sessionDescBox .prevIcon {
+    display: none;
+  }
+}
+.sessionDescBox .nextIcon.hideMe, .sessionDescBox .prevIcon.hideMe {
+  display: none;
+}
+.sessionDescBox .prevIcon {
+  left: 10px;
 }
 .sessionDescBox h2 {
   color: #a80000;

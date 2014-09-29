@@ -32,6 +32,12 @@
 .icon-chevron-down:before {
 	content: "\f0a3";
 }
+.icon-chevron-left:before {
+	content: "\f0a4";
+}
+.icon-chevron-right:before {
+	content: "\f078";
+}
 .icon-chevron-up:before {
 	content: "\f0a2";
 }
